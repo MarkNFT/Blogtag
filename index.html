@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-
 <html style="font-size: 148px;">
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title data-react-helmet="true">Mark｜电子导航</title>
-
   <meta name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <meta name="referrer" content="no-referrer">
@@ -16,20 +13,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="https://marknft.top/images/avatar.png">
   <style>
     a {
-
       text-decoration: none;
       /* 去除默认的下划线 */
-
       color: #000;
       /* 去除默认的颜色和点击后变化的颜色 */
     }
-
     html {
       height: 100%;
       margin: 0;
       padding: 0;
     }
-
     body {
       height: 100%;
       -webkit-font-smoothing: antialiased;
@@ -37,35 +30,28 @@
       padding: 0;
       font-family: PingFang SC;
     }
-
     #root {
       height: 100%;
     }
-
     #root.preview {
       overflow-y: hidden;
     }
-
     #root.preview:hover {
       overflow-y: auto;
     }
-
     #root.pc .container {
       max-width: 562px;
       overflow-x: hidden;
       overflow-y: auto;
     }
-
     .container {
       overflow-y: hidden;
       min-height: 100%;
       margin: 0 auto;
     }
-
     ::-webkit-scrollbar {
       width: 0px;
     }
-
     * {
       box-sizing: border-box;
     }
@@ -83,17 +69,14 @@
       const path = window.location.pathname;
       const search = window.location.search;
       const referer = document.referrer;
-
       sessionStorage.setItem("origin", referer);
     }
-
     var userAgent = navigator.userAgent;
     var isIE10 =
       userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //ie11以下
     var isEdge = userAgent.indexOf("Edge") > -1 && !isIE10;
     var isIE11 =
       userAgent.indexOf("Trident") > -1 && userAgent.indexOf("rv:11.0") > -1;
-
     function isIE() {
       if (!!window.ActiveXObject || "ActiveXObject" in window) {
         return true;
@@ -101,7 +84,6 @@
         return false;
       }
     }
-
     function checkIeBrowser() {
       if (isIE()) {
         console.log("checkIeBrowser", window.location.pathname);
@@ -113,7 +95,6 @@
         }
       }
     }
-
     checkIeBrowser();
     redirect();
   </script>
@@ -124,7 +105,6 @@
     if (isMobile || isIframe) {
       document.documentElement.style.fontSize =
         (100 / 375) * document.documentElement.clientWidth + "px";
-
       // 监听resize事件(改变浏览器大小时，设置新的rem)
       window.onresize = function () {
         document.documentElement.style.fontSize =
@@ -137,7 +117,6 @@
   <script src="./Muse｜Mark_files/tezign-tracer-sdk.1.0.59.min.js.下载"></script>
   <script src="./Muse｜Mark_files/jweixin-1.6.0.js.下载"></script>
 </head>
-
 <body style="font-size: 16px;">
   <div id="root" class="pc">
     <div class="container default-container___lcKRx">
@@ -145,7 +124,6 @@
       </div>
       <div class="container-layout___2Z0gY">
         <div class="container-head-bg___1Bq1r">
-
           <div class="arrow-icon-warp___1ddzl"><img class="arrow-icon___3zDcp" src="./Muse｜Mark_files/arrow.svg">
           </div>
         </div>
@@ -153,11 +131,14 @@
           <div class="avatar-warp___3fho-"><img src="./Muse｜Mark_files/avatar.jpg">
           </div>
           <div class="body-info___3E_j7">
-            <div class="name___27ZnC">Mark996</div>
-            <div class="desc___19ndb">文字可以击穿时间🏝</div>
+            <div class="name___27ZnC">Mark • Web3</div>
+            <div class="desc___19ndb">会点代码 | 就想搞钱🏝</div>
           </div>
           <!-- <div class="container-contact___3WZnx">
             <div>
+
+
+  
               <div>
                 <div class="social-account___1egX9"><img src="./Muse｜Mark_files/wechat.svg"></div>
               </div>
@@ -173,27 +154,28 @@
               </div>
             </div>
           </div> -->
-              
-          <div class="social-link-wrapper___3OA7- cp___2Q6Nc">
+          <div class="container-social___GlUML">
+            
+             <div class="social-link-wrapper___3OA7- cp___2Q6Nc">
               <div class="social-link-icon-wrapper___1FTAY"><img src="./Muse｜Mark_files/normal_link.svg"></div>
               <div class="social-link-title-wrapper___d6NRL">
-                <a href="https://marknft.github.io/" target="_blank" rel="noopener noreferrer">
-                <div>博客随笔</div>
+                <a href="https://marknft.top/" target="_blank" rel="noopener noreferrer">
+                <div>个人博客</div>
               </a>
               </div>
             </div>
 
-
-          
             <div class="social-link-wrapper___3OA7- cp___2Q6Nc">
               <div class="social-link-icon-wrapper___1FTAY"><img src="./Muse｜Mark_files/gongzhonghao.svg"></div>
+
+    
+
               <div class="social-link-title-wrapper___d6NRL">
                 <a href="https://mp.weixin.qq.com/s/FrJs9lU7yeYlDSUVwM40GQ" target="_blank" rel="noopener noreferrer">
                 <div>微信公众号</div>
               </a>
               </div>
             </div>
-
            
             <div class="social-link-wrapper___3OA7- cp___2Q6Nc">
               <div class="social-link-icon-wrapper___1FTAY"><img src="./Muse｜Mark_files/YouTube.svg"></div>
@@ -207,7 +189,6 @@
       </div>
       <div class="container-layout-footer___2h7g6">
         <footer class="footer___Ja9j3">
-
           <div style="font-size:10px;color:#666;">                 
            <a href="mailto:Markbb110@Gmail.com" style="color:#1a0dab;text-decoration: underline;">Markbb110@gmail.com</a> | Wechat：Codepen</div>
         </footer>
@@ -218,10 +199,8 @@
     window.g_useSSR = true;
     window.g_initialProps = { "userInfo": { "name": "Mark", "avatar": "https:\u002F\u002Fitg-tezign-files.tezign.com\u002Fsop\u002Fpublic\u002Fmuse\u002Favatar\u002F423282b52\u002F3f6e7b72-ac09-44ee-9992-25f99fe35977.png", "remark": "区块链探索者", "weChartId": "Men0228", "email": "Markbb110@gmail.com", "phone": "13277745342", "socialInfos": [{ "title": "博客", "link": "https:\u002F\u002Fmarknft.top\u002F", "icon": "https:\u002F\u002Fitg-tezign-files.tezign.com\u002Fsop\u002Fpublic\u002F342\u002F253480a02\u002Fmedium.svg" }, { "title": "张知柳", "link": "https:\u002F\u002Fmp.weixin.qq.com\u002Fs?__biz=MzI5MDcwMjk4Nw==&mid=2247483671&idx=1&sn=237177e615265c829b8b427eb13e0a94&chksm=ec1a92f3db6d1be5580ff0ac4c29e9f5063f0eec36d23bd9e5b19a2d47145157b77c9e722aa2&token=9436", "icon": "https:\u002F\u002Fitg-tezign-files.tezign.com\u002Fsop\u002Fpublic\u002F1\u002F333581b41\u002Fgongzhonghao.svg" }, { "title": "B站", "link": "https:\u002F\u002Fspace.bilibili.com\u002F1180093054", "icon": "https:\u002F\u002Fitg-tezign-files.tezign.com\u002Fsop\u002Fpublic\u002F1\u002F333581b41\u002Fbilibili.svg" }, { "title": "请喝可乐", "link": "https:\u002F\u002Fdun.mianbaoduo.com\u002F@Mark", "icon": "https:\u002F\u002Fitg-tezign-files.tezign.com\u002Fsop\u002Fpublic\u002F1\u002F333581b41\u002Fnormal_link.svg" }, { "title": "YouTube", "link": "https:\u002F\u002Fwww.youtube.com\u002Fchannel\u002FUCS8BqjUmQbiNnr0GgqUiiBw", "icon": "https:\u002F\u002Fitg-tezign-files.tezign.com\u002Fsop\u002Fpublic\u002F342\u002F313584845\u002FYouTube.svg" }, { "title": "推特", "link": "https:\u002F\u002Ftwitter.com\u002Fjackciyty1", "icon": "https:\u002F\u002Fitg-tezign-files.tezign.com\u002Fsop\u002Fpublic\u002F342\u002F1434a0935\u002FTwitter.svg" }] }, "pathCode": "Mark", "templatePath": "https:\u002F\u002Fitg-tezign-files.tezign.com\u002Fsop\u002Fpublic\u002Fmuselink\u002Fchill\u002F1650543186002", "clientUserAgent": "Mozilla\u002F5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\u002F537.36 (KHTML, like Gecko) Chrome\u002F100.0.4896.127 Safari\u002F537.36", "clientIsMobile": false };
   </script>
-
   <script>
     document.body.style.fontSize = "16px";
-
     var ua = navigator.userAgent.toLocaleLowerCase();
     var isMobile = /(iphone|ipad|ipod|mobile|android|phone)/.test(ua);
     var root = document.getElementById("root");
@@ -237,8 +216,5 @@
     }
   </script>
   <script src="./Muse｜Mark_files/umi.js"></script>
-
-
 </body>
-
 </html>
